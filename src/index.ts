@@ -1,8 +1,8 @@
 import express from 'express';
-import { askGemini } from './gemini';
 import dotenv from 'dotenv';
 import TelegramBot, { Message } from 'node-telegram-bot-api';
 dotenv.config();
+import { askGemini } from './gemini';
 
 const app = express();
 app.use(express.json());
